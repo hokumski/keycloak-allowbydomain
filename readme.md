@@ -5,7 +5,8 @@ and blocks registration.
 
 ## Setup
 
-Add node to **standalone.xml** or **standalone-ha.xml**
+If you use legacy version of Keycloak with XML configuration, add node 
+to **standalone.xml** or **standalone-ha.xml**
 
 Here, template is a name of template to show, if registration is being blocked.
 
@@ -18,6 +19,12 @@ Here, template is a name of template to show, if registration is being blocked.
         </properties>
     </provider>
 </spi>
+```
+
+Add newer versions of Keycloak, add rows to **keycloak.conf**:
+```
+spi-required-action-allow_by_domain-template=required-action-abd.ftl
+spi-required-action-allow_by_domain-domains=yourfirstdomain.com;anotherdomain.org
 ```
 
 Next, add new template to your (or *keycloak*) theme: **required-action-abd.ftl**.

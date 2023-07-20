@@ -6,7 +6,7 @@
 
     <groupId>com.keenetic.account</groupId>
     <artifactId>keycloak-allowbydomain</artifactId>
-    <version>1.0</version>
+    <version>1.22</version>
 
     <properties>
         <!-- Maven -->
@@ -15,7 +15,7 @@
 
         <!-- Dependencies -->
         <jboss.logging.version>3.3.1.Final</jboss.logging.version>
-        <keycloak.version>12.0.4</keycloak.version>
+        <keycloak.version>22.0.1</keycloak.version>
     </properties>
 
     <dependencies>

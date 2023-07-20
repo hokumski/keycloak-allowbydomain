@@ -21,7 +21,7 @@ import org.keycloak.authentication.RequiredActionContext;
 import org.keycloak.authentication.RequiredActionProvider;
 import org.keycloak.forms.login.LoginFormsProvider;
 import org.keycloak.models.UserModel;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response;
 
 /** @author <a href="mailto:hokum@dived.me">Andrey Kotov</a> */
 public class AllowByDomainAction implements RequiredActionProvider {
